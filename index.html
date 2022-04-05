@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <center>
+    <div class="container">
+        <div class="calculator dark">
+            <!-- For Dark Mood -->
+            <div class="theme-toggler active"> 
+                <i class="fa-solid fa-circle-half-stroke" id="toggle-icon"></i>
+            </div>
+
+            <!-- To show display output, history and tempory result -->
+            <div class="display-screen">
+                <div id="display">
+                        <div class="display-1" id="display-1"></div> 
+                        <div class="display-2" id="display-2"></div>
+                        <div class="temp-res" id="temp-res"></div>
+                </div>
+                
+            </div>
+            <!-- For Number Keyboard -->
+            <div class="button">
+                <table>
+                    <tr>
+                        <td><button class="btn-operator-del" id="clearAll">C</button></td>
+                        <td><button class="btn-operator" id="/">/</button></td>
+                        <td><button class="btn-operator" id="*">x</button></td>
+                        <td><button class="btn-operator-del" id="clearOne"> CE </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="number" id="7">7</button></td>
+                        <td><button class="number" id="8">8</button></td>
+                        <td><button class="number" id="9">9</button></td>
+                        <td><button class="btn-operator" id="-">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="number" id="4">4</button></td>
+                        <td><button class="number" id="5">5</button></td>
+                        <td><button class="number" id="6">6</button></td>
+                        <td><button class="btn-operator" id="+">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="number" id="3">3</button></td>
+                        <td><button class="number" id="2">2</button></td>
+                        <td><button class="number" id="1">1</button></td>
+                        <td rowspan="2"><button class="btn-equal" id="=" style="height: 130px;">=</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-operator" id="%">%</button></td>
+                        <td><button class="number" id="0">0</button></td>
+                        <td><button class="number" id=".">.</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </center>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
